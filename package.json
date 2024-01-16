@@ -1,5 +1,5 @@
 {
-  "name": "react-native-jwt",
+  "name": "@nbn23/react-native-jwt",
   "version": "0.1.0",
   "description": "React Native JWT",
   "main": "lib/commonjs/index",

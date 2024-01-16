@@ -17,6 +17,10 @@ const Jwt = NativeModules.Jwt
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Jwt.multiply(a, b);
+export function sign(
+  header: Record<string, unknown>,
+  payload: Record<string, unknown>,
+  privateKey: string
+): Promise<string | null> {
+  return Jwt.sign(header, payload, privateKey);
 }
